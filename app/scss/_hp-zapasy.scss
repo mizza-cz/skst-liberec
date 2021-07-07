@@ -1,0 +1,172 @@
+.hp-zapasy{
+   background-color: $green;
+   padding: 32px 0;
+   &__inner{
+    display: flex;
+    margin-left: -17px;
+    margin-right: -17px;
+   }
+   .slick-slide{
+      
+      margin: 0 16px;
+   }
+   &__item{
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 24px;
+      display: flex !important;
+      flex-wrap: wrap;
+      max-width: 432px;
+      margin: 0 16px;
+   }
+   &__box{
+      margin-left: 24px;
+      flex:  0 0 75%;
+      margin-bottom: 8px;
+   }
+   &__top{
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+   }
+   &__info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     span{
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.5;
+     }
+   }
+   &__date{
+      font-size: 0.75rem;
+   }
+   &__tv{
+      color: $green;
+      position: relative;
+      padding-left: 22px;
+      font-size: 0.75rem;
+      margin-left: 24px;
+      line-height: normal;
+      &::before{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 2px;
+         width: 14px;
+         height: 14px;
+         background-image: url('../images/svg/play-circle-solid.svg');
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+   }
+   &__tym{
+      display: block;
+   }
+   &__logo{
+      border: 1px solid rgba(154, 198, 30, 0.5);
+      border-radius: 5px;
+      width: 72px;
+      height: 72px;
+     
+      background: rgba(154, 198, 30, 0.1);
+      img{
+         background: transparent;
+         border-radius: 5px;
+        
+      }
+   }
+   &__number{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $green;
+   }
+   &__bottom{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .link+.link{
+         margin-left: 8px;
+      }
+      .link{
+         display: block;
+      }
+   }
+
+   &__btn{
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      width: 29px;
+      height: 30px;
+      top: 68px;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   &__btnprev{
+      left: -65px;
+     
+   }
+   &__btnnext{
+      right: -65px;
+   }
+}
+
+@media(max-width:1540px){
+   
+   .hp-zapasy__item,
+   .hp-zapasy .slick-slide{
+      margin: 0 8px;
+   }
+   .hp-zapasy__inner{
+      flex-wrap: wrap;
+   }
+}
+@media(max-width:1339px){
+   .hp-zapasy__inner{
+      margin: 0;
+      margin-left: -16px;
+   }
+   .hp-zapasy__item{
+      flex: 0 50%;
+      max-width: none;
+   }
+}
+@media(max-width:920px){
+   .hp-zapasy__box{
+      margin-left: 20px;
+      flex: 0 70%;
+   }
+   .hp-zapasy__item{
+      padding: 16px;
+   }
+   .hp-zapasy__top{
+      display: block;
+   }
+   .hp-zapasy__tv{
+      margin-left: 0;
+      margin-top: 5px;
+   }
+   .hp-zapasy__bottom .link+.link{
+      margin-left: 4px;
+   }
+   .hp-zapasy__bottom{
+      margin-left: -4px;
+      margin-right: -4px;
+   }
+   .hp-zapasy__bottom .link{
+      margin: 0 4px 4px 4px;
+   }
+}
+@media(max-width:730px){
+   
+   .hp-zapasy__box{
+      margin-left: 0;
+      flex: 100%;
+   }
+   .hp-zapasy__logo{
+      display: none;
+   }
+}

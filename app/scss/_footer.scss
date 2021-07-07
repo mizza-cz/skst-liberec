@@ -1,0 +1,13 @@
+.footer{
+   font-size: 0.875rem;
+   background-color: $green;
+   text-align: center;
+   padding: 32px 0;
+   line-height: 1.4;
+   
+   .copyright{
+      font-weight: 700;
+      margin-bottom: 8px;
+      padding: 0 10px;
+   }
+}
