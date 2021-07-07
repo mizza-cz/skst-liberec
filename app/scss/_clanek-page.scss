@@ -1,0 +1,51 @@
+.clanek-page{
+   &__author{
+      font-weight: 700;
+      color: $green;
+      margin-bottom: 27px;
+   }
+   .main__content{
+      .topstory__item::before{
+         border-bottom-left-radius: 0;
+         border-bottom-right-radius: 0;
+      }
+      .topstory__info{
+         bottom: 48px;
+      }
+      .topstory__article{
+         height: 671px;
+         border-bottom-left-radius: 0;
+         border-bottom-right-radius: 0;
+        
+         h1{
+            margin-bottom: 0;
+            line-height: 1.25;
+         }
+      }
+   }
+}
+
+@media(max-width:1440px){
+   .clanek-page .main__content .topstory__article{
+      height: auto;
+   }
+}
+@media(max-width:680px){
+   .clanek-page .main__content .topstory__article{
+      height: 320px;
+   }
+   .clanek-page .main__content .topstory__info{
+      bottom: 24px;
+      h1{
+         font-size: 1.25em;
+         line-height: 1.15;
+      }
+   }
+ 
+}
+@media(max-width:410px){
+   .clanek-page .main__content .topstory__article{
+      height: 270px;
+      
+   }
+}

@@ -55,6 +55,9 @@
          font-size: 0.75rem;
          border-right: 1px solid rgba($green, .5);
          border-left: 1px solid rgba($green, .5);
+         &:hover{
+           text-decoration: underline;
+         }
          &:first-child{
             border-right: none;
          }
@@ -72,6 +75,10 @@
          display: block;
          width: 24px;
          height: 24px;
+         transition: all .3s;
+         &:hover{
+            transform: scale(1.2);
+         }
       }
    }
 }

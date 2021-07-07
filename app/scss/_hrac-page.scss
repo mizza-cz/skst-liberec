@@ -1,0 +1,138 @@
+.hrac-page{
+   .main__content{
+      .topstory__article:first-child{
+         height: 672px;
+         border-bottom-right-radius: 0;
+         border-bottom-left-radius: 0;
+         .topstory__item::before{
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+         }
+         .topstory__info{
+            bottom: 32px;
+            h1{
+               margin-bottom: 0;
+            }
+         }
+      }
+      
+   }
+   .main__box{
+      h2{
+         margin-bottom: 8px;
+      }
+      .link{
+         display: block;
+         max-width: fit-content;
+         margin-left: auto;
+      }
+   }
+   &__info{
+      display: flex;
+      justify-content: center;
+      background-color: $green;
+      &-col{
+         color: $black;
+         padding: 40px;
+         border-right: 1px solid $black;
+         &:last-child{
+            border-bottom: none;
+            border-right: none;
+         }
+         span{
+            font-size: 0.75rem;
+            display: block;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.5;
+            margin-bottom: 8px;
+         }
+         p{
+            line-height: 1.31;
+         }
+      }
+   }
+   &__clanek{
+      border-bottom: 1px solid $green;
+      padding: 15px 0 15px 0;
+      display: flex;
+      align-items: center;
+      &:last-of-type{
+         margin-bottom: 16px;
+      }
+      span{
+         font-size: 0.875rem;
+         padding-right: 16px;
+         line-height: 1.43;
+      }
+      a  p{
+         font-size: 1rem;
+         line-height: normal;
+
+      }
+      &:hover{
+         a{
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+@media(max-width:1440px){
+   .hrac-page .main__content .topstory__article:first-child{
+      height: auto;
+   }
+}
+@media(max-width:840px){
+   .hrac-page__info{
+      width: 100%;
+   }
+   .hrac-page__info-col{
+      padding: 40px 20px;
+   }
+}
+@media(max-width:680px){
+   .hrac-page__clanek span{
+      width: 100px;
+   }
+   .hrac-page__clanek{
+      display: block;
+   }
+   .hrac-page__info{
+      flex-wrap: wrap;
+   }
+   .hrac-page__info-col{
+      border-top: 1px solid $black;
+      padding: 20px;
+      flex: 0 50%;
+      max-width: 50%;
+      &:nth-last-child(3){
+         border-right: none;
+      }
+   }
+   .hrac-page .main__content .topstory__article:first-child{
+      height: 320px;
+   }
+   .hrac-page .main__content .topstory__info{
+      bottom: 24px;
+      h1{
+         font-size: 1.25em;
+         line-height: 1.15;
+      }
+   }
+ 
+}
+@media(max-width:480px){
+   .hrac-page__info-col{
+      flex: 100%;
+      max-width: 100%;
+      text-align: center;
+      border-right: none;
+   }
+}
+@media(max-width:410px){
+   .hrac-page .main__content .topstory__article:first-child{
+      height: 270px;
+      
+   }
+}
