@@ -2,8 +2,16 @@
    .main__top{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 24px;
+      h1{
+         padding: 0 20px;
+         margin-bottom: 0;
+      }
      .form{
-        padding-top: 9px;
+        padding: 9px 20px 0 20px;
      }
    }
 }
@@ -61,6 +69,9 @@
    }
  }
  .soupiska{
+    .main__box{
+       padding-bottom: 8px;
+    }
     &__inner{
        display: flex;
        flex-wrap: wrap;
