@@ -7,7 +7,7 @@ $(function(){
       $(this).closest('.nav__item').toggleClass('active');
     });
   
-   // $('select, input.radio, input.checkbox').styler();
+   $('select, input.radio, input.checkbox').styler();
  
    $('.hp-zapasy__inner').slick({
       slidesToShow: 3,
