@@ -1,0 +1,58 @@
+.zapasy-page{
+   &__header{
+      padding: 7px 8px;
+      border: 1px solid $green;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 8px;
+      a{
+         font-size: 0.875rem;
+         color: $black;
+         padding: 0 16px;
+         position: relative;
+      }
+      a+a{
+         &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            background-color: $green;
+            width: 1px;
+            height: 10px;
+            top: 4px;
+         }
+      }
+   }
+   .otrazky__result{
+      font-size: 2.5rem;
+   }
+   .otrazky__info{
+      background: transparent;
+      padding: 16px 0;
+      border-bottom: 1px solid $green;
+      .hp-zapasy__tv{
+         line-height: 1.1;
+         font-size: 0.875rem;
+      }
+      .hp-zapasy__date{
+         font-size: 0.875rem;
+         line-height: 1.1;
+      }
+   }
+   .otrazky__logo{
+      border: 1px solid $green;
+      background: rgba(154, 198, 30, 0.1);;
+   }
+   .otrazky__teams{
+      h3{
+         line-height: 1.1;
+         letter-spacing: -0.2px;
+      }
+   }
+}
+.win{
+   color: $green;
+}
+.loser{
+   color: $red;
+}

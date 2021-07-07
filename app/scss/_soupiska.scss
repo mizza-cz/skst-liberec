@@ -138,6 +138,17 @@
       max-width: 50%;
    }
  }
+ @media(max-width:680px){
+   .main .main__top .form{
+      width: 100%;
+      .select__redirect{
+         max-width: 100%;
+      }
+      .jq-selectbox__dropdown{
+         width: 100% !important;
+      }
+   }
+ }
  @media(max-width:600px){
    .soupiska__item{
       flex: 100%;
