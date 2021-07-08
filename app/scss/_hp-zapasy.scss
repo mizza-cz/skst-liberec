@@ -66,12 +66,12 @@
       display: block;
    }
    &__logo{
+      background: rgba(154, 198, 30, 0.1);
       border: 1px solid rgba(154, 198, 30, 0.5);
       border-radius: 5px;
       width: 72px;
       height: 72px;
-     
-      background: rgba(154, 198, 30, 0.1);
+      
       img{
          background: transparent;
          border-radius: 5px;
