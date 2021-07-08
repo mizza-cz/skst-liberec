@@ -5,11 +5,17 @@
       border-radius: 5px;
       text-align: center;
       margin-bottom: 8px;
+      .active{
+         font-weight: 700;
+      }
       a{
          font-size: 0.875rem;
          color: $black;
          padding: 0 16px;
          position: relative;
+         &:hover{
+            text-decoration: underline;
+         }
       }
       a+a{
          &::before{
