@@ -1,5 +1,8 @@
 .hrac-page{
    .main__content{
+      .topstory__article:hover .topstory__item h1, .topstory__article:hover .topstory__item h3{
+         text-decoration: none;
+      }
       .topstory__article:first-child{
          height: 672px;
          border-bottom-right-radius: 0;

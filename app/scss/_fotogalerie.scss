@@ -76,6 +76,11 @@
       border: 1px solid rgba(154, 198, 30, 0.5);
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
+      &:hover{
+         p{
+            text-decoration: underline;
+         }
+      }
       p{
          font-size: 0.875rem;
       }
