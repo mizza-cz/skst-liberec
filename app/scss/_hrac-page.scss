@@ -50,6 +50,9 @@
             line-height: 1.5;
             margin-bottom: 8px;
          }
+         a{
+            text-decoration: underline;
+         }
          p{
             line-height: 1.31;
          }
@@ -105,12 +108,21 @@
       flex-wrap: wrap;
    }
    .hrac-page__info-col{
+      text-align: center;
       border-top: 1px solid $black;
       padding: 20px;
       flex: 0 50%;
       max-width: 50%;
-      &:nth-last-child(3){
+      &:nth-last-child(2),
+      &:nth-last-child(4){
          border-right: none;
+
+      }
+      &:last-child{
+         width: 100%;
+         max-width: 100%;
+         flex:100%;
+        
       }
    }
    .hrac-page .main__content .topstory__article:first-child{
@@ -131,6 +143,7 @@
       max-width: 100%;
       text-align: center;
       border-right: none;
+
    }
 }
 @media(max-width:410px){
