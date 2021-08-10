@@ -274,3 +274,29 @@ img{
 }
 
 
+table{
+   border-collapse: collapse;
+   width: 100%;
+   background: rgba(154,198,30,0.1);
+   padding: 8px;
+   border: 1px solid #9ac61e;
+}
+th{
+   
+}
+th,td{
+   padding: 8px 16px;
+   border-bottom: 1px solid #9ac61e;
+}
+td a{
+   text-decoration: underline;
+}
+@media(max-width:680px){
+   .table-scroll{
+      overflow-x: scroll;
+      
+   }
+   table{
+      width: 600px;
+   }
+}

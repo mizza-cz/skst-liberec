@@ -197,7 +197,18 @@
      z-index: 888;
      cursor: pointer;
      height: 100%;
-     
+     div.nav__link{
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/svg/angle-down-green.svg');
+        right: 8px;
+        width:8px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     }
      &:hover {
        text-transform: uppercase;
        .nav__link{
@@ -231,16 +242,7 @@
      position: relative;
      padding: 19px 24px 26px 8px;
     
-     &::before{
-        content: '';
-        position: absolute;
-        background-image: url('../images/svg/angle-down-green.svg');
-        right: 8px;
-        width:8px;
-        height: 10px;
-        background-repeat: no-repeat;
-        background-size: cover;
-     }
+
    }
  }
  
