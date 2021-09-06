@@ -290,6 +290,9 @@ th,td{
 }
 td a{
    text-decoration: underline;
+   &:hover{
+      text-decoration: none;
+   }
 }
 @media(max-width:680px){
    .table-scroll{
